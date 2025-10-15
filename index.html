@@ -10,26 +10,26 @@
 </head>
 
 <body>
-  <div class="container-lg">
+  <div class="container-lg my-4">
   <div class="row bg-light p-3 rounded mb-3 ">
-  <div class="col-12"">
+  <div class="col-12">
     <h3>Payment form example</h3>
   </div>
   </div>
   <div class="container">
     <div class="row">
-    <div class="card-body col-12"style="background-color: pink;">Some fields are missing</div>
+    <div class="card-body col-12 border rounded"style="background-color: pink;">Some fields are missing</div>
   </div>
   </div>
   <div class="card-body">
     <form class="row g-3">
   <div class="col-4">
-    <label for="cardNumber" class="form-label">Card#</label>
+    <label for="cardNumber1" class="form-label">Card#</label>
     <input type="numeric" class="form-control" id="cardNumber1" placeholder="XXXXXXXXXXXXXX">
   </div>
   <div class="col-4">
     <label for="inputCvc1" class="form-label">Cvc#</label>
-    <input type="password" class="form-control" id="inputPassword4" placeholder="00000">
+    <input type="password" class="form-control" id="inputCvc1" placeholder="00000">
   </div>
   <div class="col-4">
     <label for="amount" class="form-label">Amount</label>
@@ -109,30 +109,33 @@
   </div>
   <div class="row g-3">
   <div class="col-6">
-    <label for="Card" class="form-label">We accept</label>
+    <label for="card" class="form-label">We accept</label>
+    <div class="d-flex gap-3 flex-wrap p-3 rounded">
+          
     <div class="d-flex d-flex gap-3  align-items-center flex-wrap">
   <div class="form-check ">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <input class="form-check-input" type="checkbox" id="card" value="option1">
   <label class="form-check-label" for="inlineCheckbox1">
     <i class="fa-brands fa-cc-mastercard"></i>
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <input class="form-check-input" type="checkbox" id="card" value="option2">
   <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-visa"></i>
   </label>
 </div>
 <div class="form-check ">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+  <input class="form-check-input" type="checkbox" id="card" value="option3" >
   <label class="form-check-label" for="inlineCheckbox3"><i class="fa-brands fa-cc-diners-club"></i>
   </label>
 </div>
 <div class="form-check ">
-  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" >
+  <input class="form-check-input" type="checkbox" id="card" value="option4" >
   <label class="form-check-label" for="inlineCheckbox4"><i class="fa-brands fa-cc-amex"></i>
   </label>
   </div>
     </div>
+      </div>
       </div>
 <div class="col-md-6">
   <label for="exampleFormControlTextarea1" class="form-label">Message</label>
